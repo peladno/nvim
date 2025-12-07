@@ -152,3 +152,20 @@
 
 ## ❓ Which-Key
 - `<leader>?` → Show buffer-local keymaps with **which-key**  
+
+---
+
+# 🗨️ Comment.nvim
+- **Plugin:** `numToStr/Comment.nvim` (with `nvim-ts-context-commentstring` for context-aware comments)  
+- **Purpose:** Easily comment/uncomment code, with smart detection for mixed-language files (JSX, TSX, HTML, Svelte).  
+
+### Basic Commands
+- `gc` → Toggle comment on a line (Normal mode)  
+- `gcc` → Comment/uncomment the current line  
+- `gc{motion}` → Comment a text object or motion (e.g., `gcw` for a word)  
+- `gb` → Toggle block comment  
+- `gbc` → Comment/uncomment current block  
+- `gco` → Insert comment to the next line and enters INSERT mode
+- `gcO` → Insert comment to the previous line and enters INSERT mode
+- `gcA` → Insert comment to end of the current line and enters INSERT mode
+- Visual mode: select text and press `gc` or `gb` to comment/uncomment selection 
