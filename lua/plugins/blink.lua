@@ -1,5 +1,5 @@
 return {
-	"saghen/blink.cmp",
+	"saghen/blink.cmp", --autocompletion plugin
 	-- optional: provides snippets for the snippet source
 	dependencies = { "rafamadriz/friendly-snippets", "moyiz/blink-emoji.nvim" },
 	-- use a release tag to download pre-built binaries
