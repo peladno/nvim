@@ -116,13 +116,13 @@ Administración visual de pestañas gestionada con **Bufferline.nvim**.
 
 Guarda y restaura el estado de tus pestañas, buffers y ventanas por proyecto usando las APIs nativas de Neovim y menú interactivo de selección.
 
-| Modo    | Atajo        | Comando                  | Descripción                                     |
-| :------ | :----------- | :----------------------- | :---------------------------------------------- |
-| Normal  | `<leader>wr` | `:SessionRestore`        | Menú interactivo para seleccionar y restaurar   |
-| Normal  | `<leader>ws` | `:SessionSave`           | Guardar sesión del proyecto actual              |
-| Normal  | `<leader>wa` | `:SessionToggleAutoSave` | Activar / desactivar autoguardado de sesión     |
-| Comando | —            | `:SessionRestore [nom]`  | Restaura una sesión específica por nombre       |
-| Comando | —            | `:SessionDelete`         | Elimina una sesión guardada                     |
+| Modo    | Atajo        | Comando                  | Descripción                                   |
+| :------ | :----------- | :----------------------- | :-------------------------------------------- |
+| Normal  | `<leader>wr` | `:SessionRestore`        | Menú interactivo para seleccionar y restaurar |
+| Normal  | `<leader>ws` | `:SessionSave`           | Guardar sesión del proyecto actual            |
+| Normal  | `<leader>wa` | `:SessionToggleAutoSave` | Activar / desactivar autoguardado de sesión   |
+| Comando | —            | `:SessionRestore [nom]`  | Restaura una sesión específica por nombre     |
+| Comando | —            | `:SessionDelete`         | Elimina una sesión guardada                   |
 
 ---
 
