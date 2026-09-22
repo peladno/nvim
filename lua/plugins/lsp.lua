@@ -221,18 +221,30 @@ return {
 			--
 
 			lua_ls = {
-				-- cmd = { ... },
-				-- filetypes = { ... },
-				-- capabilities = {},
-				-- settings = {
-				--   Lua = {
-				--     completion = {
-				--       callSnippet = 'Replace',
-				--     },
-				--     -- You can toggle below to ignore Lua_LS's noisy `missing-fields` warnings
-				--     -- diagnostics = { disable = { 'missing-fields' } },
-				--   },
-				-- },
+				settings = {
+					Lua = {
+						runtime = {
+							version = "LuaJIT",
+						},
+						diagnostics = {
+							globals = { "vim" },
+							disable = { "missing-fields" },
+						},
+						workspace = {
+							checkThirdParty = false,
+							library = {
+								vim.env.VIMRUNTIME,
+								"${3rd}/luv/library",
+							},
+						},
+						completion = {
+							callSnippet = "Replace",
+						},
+						telemetry = {
+							enable = false,
+						},
+					},
+				},
 			},
 		}
 
