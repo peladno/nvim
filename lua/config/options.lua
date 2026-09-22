@@ -45,3 +45,7 @@ vim.opt.listchars = { tab = "» ", trail = "·", nbsp = "␣" }
 
 -- Minimal number of screen lines to keep above and below the cursor.
 vim.opt.scrolloff = 5
+
+vim.g.user42="jperez-u"
+vim.g.mail42="jperez-u@student.42tokyo.jp"
+

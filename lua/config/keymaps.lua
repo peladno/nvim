@@ -1,4 +1,5 @@
 vim.keymap.set("n", "-", "<cmd>Oil --float<CR>", { desc = "Open parent directory in Oil" })
+vim.keymap.set("n", "<leader>-", "<cmd>Oil --float<CR>", { desc = "Open parent directory in Oil" })
 -- Yank into system clipboard
 vim.keymap.set({ "n", "v" }, "<leader>y", '"+y') -- yank motion
 vim.keymap.set({ "n", "v" }, "<leader>Y", '"+Y') -- yank line

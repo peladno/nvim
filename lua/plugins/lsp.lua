@@ -205,7 +205,7 @@ return {
 			bashls = {},
 			marksman = {},
 			tailwindcss = {},
-			pyright = {},
+			mypy = {},
 			--ast_grep = {},
 			clangd = {},
 			ts_ls = {},

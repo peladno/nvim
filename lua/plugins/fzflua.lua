@@ -5,6 +5,7 @@ return {
     -- or if using mini.icons/mini.nvim
     dependencies = { "echasnovski/mini.icons" },
     opts = {},
+    files ={cmd = "fd --type f --hidden --follow --exclude .git"},
     keys={
         { 
             "<leader>ff",

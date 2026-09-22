@@ -1,11 +1,13 @@
 return {
 	"MoulatiMehdi/42norm.nvim",
 	config = function()
+		vim.g.user42="jperez-u"
+		vim.g.mail42="jperez-u@student.42tokyo.jp"
 		local norm = require("42norm")
-
+		
 		norm.setup({
-			header_on_save = true,
-			format_on_save = true,
+			header_on_save = false,
+			format_on_save = false,
 			liner_on_change = true,
 		})
 
