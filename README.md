@@ -29,25 +29,27 @@ Guía completa de atajos de teclado, comandos de plugins y comandos útiles nati
 
 ---
 
-## 1. 📂 Navegación de Archivos y Directorios
+## 1. 📂 Navegación de Archivos y Directorios (Módulo Nativo en Lua)
 
-Administración de archivos tipo buffer flotante mediante **Oil.nvim**.
+Administración y exploración de archivos en ventana flotante propia sin dependencias externas (`lua/native/explorer.lua`).
 
-| Modo    | Atajo / Comando | Descripción                                                |
-| :------ | :-------------- | :--------------------------------------------------------- |
-| Normal  | `-`             | Abrir directorio padre en ventana flotante con Oil         |
-| Normal  | `<leader>-`     | Abrir directorio padre en ventana flotante con Oil (alias) |
-| Comando | `:Oil`          | Abre el explorador Oil en el buffer actual                 |
-| Comando | `:Oil --float`  | Abre el explorador Oil en ventana flotante                 |
+| Modo    | Atajo / Comando   | Descripción                                            |
+| :------ | :---------------- | :----------------------------------------------------- |
+| Normal  | `-`               | Abrir explorador nativo en ventana flotante            |
+| Normal  | `<leader>-`       | Abrir explorador nativo en ventana flotante (alias)    |
+| Comando | `:Explorer`       | Abre el explorador en el directorio del archivo actual |
+| Comando | `:Explorer [dir]` | Abre el explorador en la ruta indicada                 |
 
-### Controles dentro del buffer de Oil:
+### Controles dentro de la ventana del Explorador:
 
-- `<CR>`: Abrir archivo o entrar a directorio seleccionado.
-- `-`: Subir un nivel al directorio padre.
-- `g?`: Ver panel de ayuda con todos los comandos de Oil.
-- `<C-p>`: Previsualizar archivo bajo el cursor.
-- `<C-c>` / `q`: Cerrar explorador Oil.
-- `<C-l>`: Refrescar vista del directorio.
+- `<CR>` / `l`: Abrir archivo en la ventana de fondo o entrar a la carpeta seleccionada.
+- `-` / `h`: Subir al directorio padre (`..`).
+- `a`: Crear nuevo archivo o directorio (escribir sufijo `/` para crear carpeta).
+- `d`: Eliminar el archivo o carpeta bajo el cursor (con confirmación de seguridad).
+- `r`: Renombrar archivo o carpeta seleccionada.
+- `.`: Mostrar u ocultar archivos ocultos (_dotfiles_).
+- `R`: Refrescar / recargar el listado de archivos.
+- `q` / `<Esc>`: Cerrar el explorador.
 
 ---
 
