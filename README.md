@@ -112,16 +112,16 @@ Administración visual de pestañas gestionada con **Bufferline.nvim**.
 
 ---
 
-## 5. 💾 Gestión de Sesiones (Auto-Session)
+## 5. 💾 Gestión de Sesiones (Módulo Nativo en Lua)
 
-Guarda y restaura el estado de tus pestañas, buffers y ventanas por proyecto.
+Guarda y restaura el estado de tus pestañas, buffers y ventanas por proyecto usando las APIs nativas de Neovim y menú interactivo de selección.
 
 | Modo    | Atajo        | Comando                  | Descripción                                     |
 | :------ | :----------- | :----------------------- | :---------------------------------------------- |
-| Normal  | `<leader>wr` | `:SessionSearch`         | Buscar y restaurar sesiones guardadas           |
-| Normal  | `<leader>ws` | `:SessionSave`           | Guardar manualmente la sesión actual            |
+| Normal  | `<leader>wr` | `:SessionRestore`        | Menú interactivo para seleccionar y restaurar   |
+| Normal  | `<leader>ws` | `:SessionSave`           | Guardar sesión del proyecto actual              |
 | Normal  | `<leader>wa` | `:SessionToggleAutoSave` | Activar / desactivar autoguardado de sesión     |
-| Comando | —            | `:SessionRestore`        | Restaura la última sesión del directorio actual |
+| Comando | —            | `:SessionRestore [nom]`  | Restaura una sesión específica por nombre       |
 | Comando | —            | `:SessionDelete`         | Elimina una sesión guardada                     |
 
 ---
@@ -268,9 +268,9 @@ Depuración interactiva con **nvim-dap**, **nvim-dap-ui** y soporte para C/C++ v
 
 ---
 
-## 12. 🗨️ Comentarios (Comment.nvim)
+## 12. 🗨️ Comentarios (Nativo Neovim 0.10+ en Lua)
 
-Comentado rápido inteligente con detección automática de contexto (JSX, TSX, C, etc.).
+Comentado rápido y eficiente nativo integrado sin plugins externos, con soporte para múltiples lenguajes (C, C++, Lua, Python, JS/TS, TSX, HTML, CSS, SQL, etc.).
 
 | Modo   | Atajo        | Acción                                                              |
 | :----- | :----------- | :------------------------------------------------------------------ |
