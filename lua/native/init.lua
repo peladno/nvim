@@ -8,6 +8,7 @@ function M.setup()
 	require("native.autopairs").setup()
 	require("native.ui_input").setup()
 	require("native.explorer").setup()
+	require("native.antigravity").setup()
 end
 
 return M
